@@ -18,5 +18,5 @@ for theme in df["theme"].unique():
                 df_out.append([ df_.iloc[i], df_.iloc[j] ])
     
 df_out = pd.DataFrame( df_out )
-df_out.to_csv(OUT_FPATH)
+df_out.to_csv(OUT_FPATH, encoding='utf-8')
 
